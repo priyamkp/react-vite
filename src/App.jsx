@@ -1,5 +1,11 @@
 import { useState } from 'react'
 import './App.css'
+import logo from './images/Apple.png'
+import global from './images/Globallegals.svg'
+import person1 from './images/Person1.png'
+import person2 from './images/Person2.png'
+import person3 from './images/Person3.png'
+import USA from './images/USA.png'
 
 
 function App() {
@@ -17,13 +23,13 @@ function App() {
               <span>your neighborhood!</span>
           <div className='relative'>
             <div className='static'>
-              <img src='/src/assets/USA-caBs7Ss1.png'></img>
+              <img src={USA}></img>
             </div>
             <div className='static'>
               
-              <img className='absolute top-10 left-44' src='/src/images/Rectangle3-GNi9v_yE.png' alt='pic 1'></img>
-              <img className='absolute bottom-24 left-10' src='/src/images/Rectangle2--EZyJVx4.png' alt='pic 2'></img>
-              <img className='absolute bottom-2 right-14' src='/src/images/Rectangle4-vBGzRO9Y.png' alt='pic 3'></img>
+              <img className='absolute top-10 left-44' src={person2} alt='pic 1'></img>
+              <img className='absolute bottom-24 left-10' src={person1} alt='pic 2'></img>
+              <img className='absolute bottom-2 right-14' src={person3} alt='pic 3'></img>
             </div>
           </div>
             </p>
@@ -33,7 +39,7 @@ function App() {
           <div className="mx-auto w-full max-w-sm lg:w-96">
             <div className='flex items-center mt-5 mb-10'>
               <a href="/_">
-                <img className='h-12 w-auto' src='/src/images/GlobalLegals-tsxPKSTD.svg' alt='Global legals'></img>
+                <img className='h-12 w-auto' src={global} alt='Global legals'></img>
               </a>
            </div>
             <div>
@@ -154,7 +160,7 @@ function App() {
                     className="flex w-full items-center justify-center gap-3 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:ring-transparent"
                   >
                     
-                     <img className='h-5 w-5' src='/src/images/applelogo.png'></img>
+                     <img className='h-5 w-5' src={logo}></img>
                     
                     <span className="text-sm font-semibold leading-6">Sign in with Apple</span>
                   </a>
